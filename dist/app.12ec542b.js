@@ -3,4 +3,4 @@ class t{constructor(){this.scrollElements=""}setup(t){t&&t.selector&&(this.scrol
 },{}],"QdeU":[function(require,module,exports) {
 "use strict";var e=require("giftbag"),r=new e.Scroll,t=document.querySelectorAll(".scroll-element");r.setup({selector:t}),r.init();var l=new e.EventGroup,o=document.querySelectorAll(".event-group-element");l.setup({selector:o}),l.init();var a=new e.Parallax,n=document.querySelectorAll(".parallax-element");a.setup({selector:n}),a.init();var u=new e.DarkMode,c=document.querySelector(".dark-mode-wrapper"),d=document.querySelector(".dark-mode-trigger");u.setup({wrapper:c,trigger:d,darkModeClass:"in-dark-mode"}),u.init();
 },{"giftbag":"LPCC"}]},{},["QdeU"], null)
-//# sourceMappingURL=/app.12ec542b.js.map
+//# sourceMappingURL=/npm-demo-david/app.12ec542b.js.map
