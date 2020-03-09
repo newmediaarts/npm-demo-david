@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:700|Libre+Franklin:400,600&display=swap");
+
+$bg: #ecf0f1;
+$bg-dark: #2b2926;
+$text-color: #ecf0f1;
+$text-color-dark: #2b2926;
+$accent-1: #f368e0;
+$accent-2: #ff9f43;
+$accent-3: #00d2d3;
+$cubic-ease: ease;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1200px;
+$heading-font: "Frank Ruhl Libre", serif;
+$text-font: "Libre Franklin", sans-serif;
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	font-family: $text-font;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+	font-family: $heading-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+// Helpers
+.padding-lg {
+	padding: 20vh 0;
+}
+
+.full-height {
+	height: 100vh;
+	width: 100%;
+}
+
+// Colors
+.color-accent-1 {
+	color: $accent-1;
+}
+
+.color-accent-2 {
+	color: $accent-2;
+}
+
+.color-accent-3 {
+	color: $accent-3;
+}
+
+.bg-accent-1 {
+	background: $accent-1;
+}
+
+.bg-accent-2 {
+	background: $accent-2;
+}
+
+.bg-accent-3 {
+	background: $accent-3;
+}
+
+// Navigation
+header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	transition: all 0.3s $cubic-ease;
+	transform: translate3d(-100%, 0, 0);
+	background: $bg-dark;
+	display: grid;
+	place-items: center;
+
+	p {
+		width: 90%;
+		max-width: 800px;
+		color: $text-color;
+		font-size: 2rem;
+		line-height: 1.8;
+	}
+
+	&.active {
+		transition: all 0.3s $cubic-ease;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+// DarkMode
+.dark-mode-trigger {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+body {
+	background: $bg;
+	transition: all 0.1s $cubic-ease;
+
+	&[data-dark-mode="true"] {
+		background: $bg-dark;
+		transition: all 0.1s $cubic-ease;
+	}
+}
+
+// Hero Section
+#hero {
+	display: grid;
+	place-items: center;
+
+	h1 {
+		font-size: 3rem;
+
+		&.in-dark-mode {
+			color: $text-color;
+		}
+	}
+}
+
+// Parallax Boxes
+.box {
+	margin: 0 auto;
+	position: relative;
+}
+
+#box-1 {
+	top: 100px;
+	right: 200px;
+	height: 400px;
+	width: 400px;
+}
+
+#box-2 {
+	bottom: 100px;
+	left: 50px;
+	height: 600px;
+	width: 600px;
+}
+
+// Scroll Section
+#scroll-section {
+	padding: 20vh 0;
+	text-align: center;
+
+	#scroll-heading {
+		font-size: 2rem;
+		opacity: 0;
+		transform: translate3d(0, 50px, 0);
+		transition: all 1s $cubic-ease;
+
+		&.visible {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}
