@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>NPM Demo</title>
-		<link rel="stylesheet" href="scss/styles.scss" />
-	</head>
-	<body class="dark-mode-wrapper">
-		<main>
-			<header>
-				<h3 class="color-accent-2">logo</h3>
-				<button
-					data-event="click"
-					data-event-element=".site-navigation"
-					data-event-add="active"
-					class="event-group-element toggle-nav-button"
-				>
-					menu
-				</button>
-			</header>
-			<nav class="full-height site-navigation">
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-					voluptates animi nisi ab eligendi necessitatibus sapiente dolore non
-					hic! Cupiditate dicta laboriosam porro numquam pariatur ea? Accusamus
-					nobis voluptatem ipsam explicabo rem consectetur totam enim soluta!
-					Voluptatem a atque voluptatibus?
-				</p>
-			</nav>
 
-			<section id="hero" class="full-height">
-				<h1>Welcome to my dope site</h1>
-			</section>
-			<section class="padding-lg">
-				<div
-					data-parallax-speed="0.5"
-					id="box-1"
-					class="box bg-accent-1 parallax-element"
-				></div>
-				<div
-					data-parallax-speed="0.8"
-					id="box-2"
-					class="box bg-accent-2 parallax-element"
-				></div>
-			</section>
-			<section id="scroll-section">
-				<h3 id="scroll-heading" class="scroll-element" data-reverse>
-					I'm a cool scroll element
-				</h3>
-			</section>
-		</main>
-		<button class="dark-mode-trigger">dark mode</button>
-		<script src="js/app.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>NPM Demo</title>
+	<link rel="stylesheet" href="scss/styles.scss" />
+</head>
+
+<body class="dark-mode-wrapper">
+	<main>
+		<header>
+			<h3 class="color-accent-2">logo</h3>
+			<button data-event="click" data-event-element=".site-navigation" data-event-add="active"
+				class="event-group-element toggle-nav-button">
+				Menu
+			</button>
+		</header>
+		<nav class="full-height site-navigation">
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+				voluptates animi nisi ab eligendi necessitatibus sapiente dolore non
+				hic! Cupiditate dicta laboriosam porro numquam pariatur ea? Accusamus
+				nobis voluptatem ipsam explicabo rem consectetur totam enim soluta!
+				Voluptatem a atque voluptatibus?
+			</p>
+		</nav>
+
+		<section id="hero" class="full-height">
+			<h1>Welcome to my dope site</h1>
+		</section>
+		<section class="padding-lg">
+			<div data-parallax-speed="0.5" id="box-1" class="box bg-accent-1 parallax-element">
+				<h2>Parallax Box 1</h2>
+				<code>div data-parallax-speed="0.5"</code>
+			</div>
+			<div data-parallax-speed="0.8" id="box-2" class="box bg-accent-2 parallax-element">
+				<h2>Parallax Box 2</h2>
+				<code>div data-parallax-speed="0.8"</code>
+			</div>
+		</section>
+		<section id="scroll-section">
+			<h3 id="scroll-heading" class="scroll-element" data-reverse>
+				I'm a cool scroll element
+			</h3>
+		</section>
+	</main>
+	<button class="dark-mode-trigger">dark mode</button>
+	<script src="js/app.js"></script>
+</body>
+
 </html>

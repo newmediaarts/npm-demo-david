@@ -99,7 +99,7 @@ nav {
 	width: 100%;
 	transition: all 0.3s $cubic-ease;
 	transform: translate3d(-100%, 0, 0);
-	background: $bg-dark;
+	background: black;
 	display: grid;
 	place-items: center;
 
@@ -152,6 +152,7 @@ body {
 .box {
 	margin: 0 auto;
 	position: relative;
+	padding: 1em;
 }
 
 #box-1 {
@@ -183,5 +184,17 @@ body {
 			opacity: 1;
 			transform: translate3d(0, 0, 0);
 		}
+
+		&.in-dark-mode {
+			color: $text-color;
+		}
 	}
+}
+
+.toggle-nav-button {
+	border: none;
+	background: transparent;
+	font-size: .8em;
+	font-weight: bold;
+	color: $accent-2;
 }
