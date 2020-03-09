@@ -1,6 +1,13 @@
 # npm-demo-david
 David's NPM Demo for NMA students
 
+[View Demo](https://newmediaarts.github.io/npm-demo-david/)
+
+## To update gh pages demo via dist folder:
+```
+git subtree push --prefix dist origin gh-pages
+```
+
 ## updates:
 * March 9th, 2020
     * Chris: deleted node modules from original zip file (posted on github instead)
